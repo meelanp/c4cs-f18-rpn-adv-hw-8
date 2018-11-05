@@ -1,9 +1,5 @@
 language: python
 python:
         - "3.5"
-cache: pip
-install:
-  - pip install -r requirements.txt
-  - pip install .
 script:
-        - test_rpn.py
+        - python test_rpn.py
