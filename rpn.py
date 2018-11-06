@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 
 import operator
+import colorama
+from colorama import init
+init()
+from colorama import Fore
 
 
 operators = {
@@ -25,7 +29,9 @@ def calculate(myarg):
         try:
             token = int(token)
             stack.append(token)
+            print(token)
         except ValueError:
+            print(Fore.BLUE + token)
             function = operators[token]
             arg2 = stack.pop()
             arg1 = stack.pop()

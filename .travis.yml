@@ -6,6 +6,7 @@ install:
         - pip install pytest
         - pip install pytest-cov
         - pip install coveralls
+        - pip install colorama
 script:
         - python3 -m unittest
         - pytest --cov=rpn
