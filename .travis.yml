@@ -3,5 +3,12 @@ python:
         - "3.5"
 install:
         - pip install -r requirements.txt
+        - pip install pytest
+        - pip install pytest-cov
+        - pip install coveralls
 script:
         - python3 -m unittest
+        - pytest --cov
+after_success:
+        - coveralls
+#Comment
