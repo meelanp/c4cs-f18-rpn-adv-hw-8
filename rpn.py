@@ -11,6 +11,14 @@ operators = {
     '^': operator.pow,
 }
 
+def printStuff():
+    print("Hello")
+    print("World")
+    print("My")
+    print("Name")
+    print("Is")
+    print("Meelan")
+
 def calculate(myarg):
     stack = list()
     for token in myarg.split():
